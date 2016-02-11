@@ -77,7 +77,7 @@ In both cases git tries to auto-merge changes. Not always possible. Sometimes re
 ```
 
 ## Replace Local Changes
-In case you did something wrong you can replace local changes uysing the command:
+In case you did something wrong you can replace local changes using the command:
 ```git checkout -- <filemame>
 ```
 This replaces the changes in your working tree with the last content in **Head**. Changes already added to the *Index* as well as new files will kept.
@@ -86,6 +86,46 @@ If you instead want to drop all your local changes and commits, fetch the latest
 ```git fetch origin
 git reset --hard origin/master
 ```
+
+## Describing the project to others
+What is the name of the repository?
+
+
+What is the name of the script?
+- rem.py
+
+
+*Writing Samples*
+DeepDream
+-------------
+This repository contains IPython Notebook with sample code, complementing Google Research blog post about Neural Network art. See original gallery for more examples.
+
+DeepDream Animator
+-------------
+This tool helps to create animations with deepdream. Extract frames from videos, process them with deepdream and then output as new video file. Frame blending option is provided, to ensure "stable" dreams across frames. A preview function make rapid iterations possible. Optionally guided dreaming & optical flow can be used.
+
+Requirements
+-------------
+Python
+Caffe (and other deepdream dependencies)
+FFMPEG
+CV2 (if you use optical flow)
+
+How to
+-------------
+Extract Video
+python dreamer.py --input myvideo/video.mp4 --output myvideo --extract 1
+
+Run DeepDream
+python dreamer.py --input myvideo --output myvideo/frames
+
+Create Video
+python dreamer.py --input myvideo/frames --output myvideo/deepdreamvideo.mp4 --create 
+
+Credits
+-------------
+Gary Boodhoo | sciencefictionthriller.com | @skinjester
+
 
 
 
