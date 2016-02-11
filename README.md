@@ -102,7 +102,6 @@ DeepDreaming is computationally intensive, and the Caffe/OpenCV/CUDA backbone of
 The script captures a video frame and will dream about that frame indefinitely, passing the output of the last cycle as the input of the next cycle, zooming in slightly each time. The real world soon disappears.
 
 
-
 Why did I make it?
 - 
 
