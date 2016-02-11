@@ -83,9 +83,9 @@ In case you did something wrong you can replace local changes using the command:
 This replaces the changes in your working tree with the last content in **Head**. Changes already added to the *Index* as well as new files will kept.
 
 If you instead want to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it like this:
-```git fetch origin
+git fetch origin
 git reset --hard origin/master
-```
+
 
 ## Describing the project to others
 What is the name of the repository?
