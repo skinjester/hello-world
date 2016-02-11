@@ -94,6 +94,18 @@ What is the name of the repository?
 What is the name of the script?
 - rem.py
 
+What does it do?
+This tool runs DeepDream neural visualization on live video input and generates live output. Its a magic mirror that reflects the alien inside the familiar.
+
+How does it work
+DeepDreaming is computationally intensive, and the Caffe/OpenCV/CUDA backbone of the process is
+The script captures a video frame and will dream about that frame indefinitely, passing the output of the last cycle as the input of the next cycle, zooming in slightly each time. The real world soon disappears.
+
+
+
+Why did I make it?
+- 
+
 
 *Writing Samples*
 DeepDream
